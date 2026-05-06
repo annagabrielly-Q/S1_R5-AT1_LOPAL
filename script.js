@@ -1,12 +1,7 @@
-let numero = Number(prompt("digite um número inteiro."));
+let mensagem = "";
 
-if (isNaN(numero)) {
-    alert("o que você digitou não é um número");
-}else{ 
-
-    if(numero % 2 == 0) {
-        alert ("É um número par");
-    } else {
-        alert("É um número impar");
-    }
+for (let i = 10; i >= 1; i--) {
+ //mensagem "10,9,8,7,6,5,4,3,2,1"
+   mensagem = `${mensagem} ${i}`;
 }
+alert (mensagem);
