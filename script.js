@@ -1,12 +1,13 @@
-let numero = Number(prompt("digite um número inteiro."));
+let multiplo = Number(prompt("digite um número"));
+ 
+if(isNaN(multiplo)){
+   alert("digite um número")
+   
+   } else {
+      alert(`tabuada do ${multiplo} é`);
 
-if (isNaN(numero)) {
-    alert("o que você digitou não é um número");
-}else{ 
-
-    if(numero % 2 == 0) {
-        alert ("É um número par");
-    } else {
-        alert("É um número impar");
-    }
-}
+      for(let i = 1; i <=10; i++){
+         let resultado = multiplo * i;
+         alert(`${multiplo} * ${i} =${resultado}`);
+      }
+   }
