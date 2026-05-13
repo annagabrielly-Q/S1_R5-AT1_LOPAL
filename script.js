@@ -1,21 +1,17 @@
-let opcao;
+let final = 9;
+let soma = 0;
+let numeros;
+let contador = 0;
 
-do{
-   opcao = Number (prompt(" Escolha uma opção: 1.inserir produto  2.listar produtos 3.sair"));
-     alert("escolha uma opção")
+while (final != 0) {
 
-   switch(opcao) {
-      case 1:
-      
-         break;
-      case 2:
-         
-         break;
-      case 3: 
-         alert("sistema encerrado");
-         break;
-   default:
-         alert("invalida, tente novamente");    
-   }
-   
-} while(opcao!==3);
+   contador++;
+
+   do {
+      numeros = Number(prompt("digite o número"));
+   } while (isNaN(numeros));
+   soma = soma + numeros;
+   final = numeros;
+
+}
+alert("quantidade dos números é " + (contador - 1) + " a soma total de todos os números é " + soma + " e a média vai ser " + soma / (contador - 1))
